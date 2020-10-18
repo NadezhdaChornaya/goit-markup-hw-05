@@ -358,6 +358,10 @@
   height: 44px;
   background-color: var(--secondary-color);
   border-radius: 50%;
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sosial-list__link:hover {
@@ -385,10 +389,20 @@
 
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-section__link:hover .clients-section__icon {
   fill: var(--acsent-color);
+}
+
+.client-section__item {
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-section__item:hover .clients-section__link {

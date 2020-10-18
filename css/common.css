@@ -99,6 +99,10 @@ img {
   margin-right: 10px;
 
   fill: var(--primery-text-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-details:hover .header-section__icon {
@@ -108,8 +112,6 @@ img {
 /* ========================= logo ============================*/
 .logo,
 .logo-footer-main {
-  /* margin-bottom: 20px; */
-
   color: var(--acsent-color);
 
   font-family: Raleway, sans-serif;
@@ -118,6 +120,10 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo:hover {
   color: var(--title-text-color);
@@ -178,6 +184,10 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -209,6 +219,10 @@ img {
   height: 80px;
   justify-content: center;
   align-items: center;
+
+  transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts .contacts-details {
@@ -253,6 +267,10 @@ img {
 
 .logo-footer {
   color: var(--secondary-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-footer:hover {
@@ -322,6 +340,10 @@ img {
   height: 44px;
   background-color: var(--footer-icon);
   border-radius: 50%;
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-sosial__icon {
