@@ -340,7 +340,7 @@
   letter-spacing: 0.03em;
 }
 
-/* =============================ICONS block ===============================*/
+/* =============================OUR CLIENTS ICONS block ===============================*/
 
 .sosial-list,
 .clients-section-list {
@@ -368,8 +368,7 @@
   background-color: var(--acsent-color);
 }
 
-.sosial-list__icon,
-.clients-section__icon {
+.sosial-list__icon {
   fill: var(--icon-color);
 }
 
@@ -390,6 +389,14 @@
   border: 1px solid var(--icon-color);
   border-radius: 4px;
 
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-section__icon {
+  fill: var(--icon-color);
+
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -399,11 +406,11 @@
   fill: var(--acsent-color);
 }
 
-.client-section__item {
+/* .client-section__item {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .client-section__item:hover .clients-section__link {
   border-color: var(--acsent-color);
