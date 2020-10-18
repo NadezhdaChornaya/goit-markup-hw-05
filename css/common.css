@@ -150,6 +150,15 @@ img {
   margin-right: 50px;
 }
 
+.current::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: var(--acsent-color);
+  border-radius: 2px;
+}
+
 .nav-flex {
   display: flex;
   align-items: center;
