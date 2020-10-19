@@ -45,7 +45,7 @@
 .filter .link {
   transition-property: color, background-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .filter .link:hover,
@@ -110,7 +110,7 @@ link:focus {
   transform: translateY(100%);
   transition-property: transform, opacity;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .flex-box__img:hover .flex-box__text {
@@ -148,7 +148,7 @@ link:focus {
 
   transition-property: box-shadow;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .flex-box:nth-child(3n) {

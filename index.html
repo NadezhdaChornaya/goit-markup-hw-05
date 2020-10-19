@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">WebStudio</title>
+    <!-- standart animatiom from Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+    />
     <!-- font type css -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -62,13 +67,16 @@
       <section class="hero-section">
         <div class="hero-section__block">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <a href="" class="hero-button" data-modal-open
+          <button data-modal-open class="hero-button">
+            <span class="button-text">Заказать услугу</span>
+          </button>
+          <!-- <a href="" class="hero-button" data-modal-open
             ><span class="button-text">Заказать услугу</span></a
-          >
+          > -->
         </div>
         <div class="backdrop backdrop__hidden" data-modal>
-          <div class="modal" data-modal-close>
-            <button class="modal__button">
+          <div class="modal">
+            <button type="button" data-modal-close class="modal__button">
               <svg class="modal-button__icone">
                 <use href="./img/sprite.svg#close-button"></use>
               </svg>

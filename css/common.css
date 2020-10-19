@@ -19,6 +19,8 @@
   --footer-icon: rgba(255, 255, 255, 0.1);
 
   --height-header-page: 80px;
+
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Тип блочной модели элементов */
@@ -103,7 +105,7 @@ img {
 
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .contacts-details:hover .header-section__icon {
@@ -124,7 +126,7 @@ img {
 
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 .logo:hover {
   color: var(--title-text-color);
@@ -188,7 +190,7 @@ img {
 
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .site-nav .link:hover,
@@ -223,7 +225,7 @@ img {
 
   transition-property: fill, color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .header-contacts .contacts-details {
@@ -271,7 +273,7 @@ img {
 
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .logo-footer:hover {
@@ -344,7 +346,7 @@ img {
 
   transition-property: background-color, fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .footer-sosial__icon {

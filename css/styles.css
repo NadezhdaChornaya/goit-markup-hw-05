@@ -76,21 +76,31 @@
 }
 
 /* ================== button ==========================*/
-.hero-button {
+/* .hero-button {
   text-decoration: none;
+} */
+
+.hero-button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--acsent-color);
+  border-color: var(--acsent-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-section .button-text {
-  display: inline-block;
-  border-radius: 4px;
-  padding: 10px 32px;
+  /* display: inline-block; */
+
   color: var(--secondary-color);
-  background-color: var(--acsent-color);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
-  text-align: center;
+  /* align-items: center;
+  text-align: center; */
   letter-spacing: 0.06em;
 }
 
@@ -141,6 +151,7 @@
 
 .backdrop__hidden {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
 }
 
@@ -361,7 +372,7 @@
 
   transition-property: background-color, fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .sosial-list__link:hover {
@@ -391,7 +402,7 @@
 
   transition-property: fill, border-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .clients-section__icon {
@@ -399,18 +410,12 @@
 
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .clients-section__link:hover .clients-section__icon {
   fill: var(--acsent-color);
 }
-
-/* .client-section__item {
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} */
 
 .client-section__item:hover .clients-section__link {
   border-color: var(--acsent-color);
